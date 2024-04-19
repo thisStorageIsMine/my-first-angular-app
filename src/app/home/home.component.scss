@@ -1,0 +1,52 @@
+.search {
+    margin: 0 auto;
+
+
+    &__form {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+
+    &__input {
+        border: 1px solid plum;
+        border-radius: 6px;
+
+        width: min(100%, 340px);
+        height: 32px;
+
+        padding: .5rem 1rem;
+    }
+
+    &__submit {
+        border: none;
+        border-radius: 6px;
+        height: 32px;
+
+        cursor: pointer;
+
+        color: white;
+        background-color: purple;
+
+        padding: .5rem 1rem;
+
+        transition: background-color 0.1s ease;
+
+        &:hover {
+            background-color: palevioletred;
+        }
+    }
+
+
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    gap: 14px;
+
+    margin-top: 50px;
+    justify-self: space-around;
+
+}
